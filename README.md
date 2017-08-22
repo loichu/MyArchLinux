@@ -60,6 +60,7 @@ For the home directory it's a bit different because we want to take all the rema
 See [official documentation](https://wiki.archlinux.org/index.php/File_systems#Create_a_file_system)
 
 To create the file system, we'll use a tool called mkfs. We'll have different types of file systems.
+
 | Partitions's name | File system | Command                             |
 |-------------------|-------------|-------------------------------------|
 | sda1              | fat32       | `mkfs.vfat /dev/sda1`               |
