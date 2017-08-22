@@ -91,6 +91,8 @@ Now we want to move from the iso live session to our system. We'll use `$ arch-c
 `$ ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime` then `$ hwclock --systohc`. Now you should have the correct time when you run `$ date`.
 ### Locales
 First uncomment the desired locales in `/etc/locale.gen`. Then run `$ locale-gen`. Choose the one you want as primary language by setting the *LANG* parameter in `/etc/locale.conf`. For exemple: `LANG=en_US.UTF-8`.
+
+You can also set the keymap in `/etc/vconsole.conf` like this: `KEYMAP=fr_CH-latin1`.
 ### Hostname
 Simply write the hostname in `/etc/hostname` and consider adding a matching entry in `/etc/hosts`.
 ### Systemd and LVM boot
