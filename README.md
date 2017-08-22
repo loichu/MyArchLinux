@@ -76,4 +76,12 @@ You can manage the mirrors in `/etc/pacman.d/mirrorlist` if you want. The upper 
 
 To install just run `$ pacstrap /mnt base`. Then just wait a few moment.
 
-## Configuration
+## Configurationg
+### Fstab
+See [official documentation](https://wiki.archlinux.org/index.php/Fstab)
+
+The fstab is used to tell your system which partition to mount at startup. First let's generate it and see what appens: `$ genfstab -U /mnt >> /mnt/etc/fstab`. Our partitions will be identified by their UUID, it's less convenient to use but it avoids system's change issues.
+
+Now make `$ cat /mnt/etc/fstab`. You sould see four partitions: root, home, swap and ESP. If it's not the case, open this file with vim, add a line and run `:r !lsblk -f`([append command output](http://vim.wikia.com/wiki/Append_output_of_an_external_command)). It will append the output of this command in the file. Then you'll be able to copy/paste the UUID of the missing partition ([select copy and paste](http://vim.wikia.com/wiki/Cut/copy_and_paste_using_visual_selection)).
+### Change root
+Now we want to move from the iso live session to our system. We'll use `$ arch-chroot /mnt`.
