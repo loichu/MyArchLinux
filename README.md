@@ -4,14 +4,13 @@ This repo is made to have a custom installation process and configuration for Ar
 Inspired from this [guide](https://wiki.archlinux.org/index.php/installation_guide)
 
 ## Configuration
-* Laptop HP spectre x360 2016
+* SSD 256 GigaBytes
+* 8 GigaBytes of RAM
+* Swiss French keyboard
 * UEFI boot mode
 * LVM partitionning
 * Home directory in separated partition
-* Grub2 bootloader
-* Zsh default shell
-* Yaourt and Pacman package managers
-* Sway and I3 WM
+* Systemd bootloader
 
 ## Prepare Arch USB and run it
 The best way I found to make a UEFI usb stick is to use Rufus. Unfortunately it's only available on Windows. Dowload the latest arch iso on the [official website](https://www.archlinux.org/download/). And burn it to a usb stick using [Rufus](https://rufus.akeo.ie/). Make sure it's in UEFI - GPT mode.
