@@ -61,9 +61,19 @@ See [official documentation](https://wiki.archlinux.org/index.php/File_systems#C
 
 To create the file system, we'll use a tool called mkfs. We'll have different types of file systems.
 
-| Partitions's name | File system | Command                             |
-|-------------------|-------------|-------------------------------------|
-| sda1              | fat32       | `mkfs.vfat /dev/sda1`               |
-| ARCH-swap         | swap        | `mkswap /dev/ARCH-LVM/ARCH-swap`    |
-| ARCH-root         | ext4        | `mkfs.ext4 /dev/ARCH-LVM/ARCH-root` |
-| ARCH-home         | ext4        | `mkfs.ext4 /dev/ARCH-LVM/ARCH-home` |
+| Partitions's name | File system | Command                               |
+|-------------------|-------------|---------------------------------------|
+| sda1              | fat32       | `$ mkfs.vfat /dev/sda1`               |
+| ARCH-swap         | swap        | `$ mkswap /dev/ARCH-LVM/ARCH-swap`    |
+| ARCH-root         | ext4        | `$ mkfs.ext4 /dev/ARCH-LVM/ARCH-root` |
+| ARCH-home         | ext4        | `$ mkfs.ext4 /dev/ARCH-LVM/ARCH-home` |
+
+## Mounting
+First we'll mount the root partition in `/mnt` using `mount` tool. Enter `$ mount /dev/ARCH-LVM/ARCH-root /mnt`. Then we'll have to make two directories: one for the home partition and one for the ESP. So run `$ mkdir /mnt/home` and `$ mkdir /mnt/boot`. Then mount home and ESP in those directories. `$ mount /dev/ARCH-LVM/ARCH-home /mnt/home` and `$ mount /dev/sda1 /mnt/boot`.
+
+## Installation YEAH !
+You can manage the mirrors in `/etc/pacman.d/mirrorlist` if you want. The upper they are in the file, the more they'll be chosen. You can also comment some of them if you don't want them at all. Personnally, I don't care, it's only the mirrors for the live iso session, not the final system. 
+
+To install just run `$ pacstrap /mnt base`. Then just wait a few moment.
+
+## Configuration
