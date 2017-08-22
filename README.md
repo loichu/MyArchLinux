@@ -98,7 +98,7 @@ We want to boot with systemd and LVM, which is not the case by default. We'll ne
 ### Set root password
 Simply run `passwd`.
 ### Install boot loader
-[](https://wiki.archlinux.org/index.php/Systemd-boot)
+[Official documentation](https://wiki.archlinux.org/index.php/Systemd-boot)
 Download the package *intel-ucode*: `$ pacman -S intel-ucode`. Run the command `$ bootctl install`. You'd got an error, don't worry we'll create this file mannually. Run `$ vim /boot/loader/loader.conf` and write:
 ```
 default  arch-lvm
