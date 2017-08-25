@@ -12,6 +12,9 @@ First, install sudo to be able to create a sudo user `$ pacman -S sudo`. Then op
 ## NetworkManager
 NetworkManager is necessary to manage network in GUI. Install it with pacman `$ pacman -S networkmanager`. Then enable the systemd service with `$ systemctl enable NetworkManager`.
 
+## Yaourt
+Follow [this tutorial](https://www.ostechnix.com/install-yaourt-arch-linux/)
+
 ## Graphical interface
 > **This section will apply to laptops with intel HD integrated graphics only.**
 
