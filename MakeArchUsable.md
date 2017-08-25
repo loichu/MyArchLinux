@@ -36,6 +36,11 @@ I choosed two different GUI that are supported by wayland: GNOME and sway. Sway 
 #### GUI login
 You have to enable the systemd service called gdm `$ systemctl enable gdm`.
 
+### Configuring
+Refer to Arch documentation:
+* [Sway](https://wiki.archlinux.org/index.php/Sway)
+* [GNOME](https://wiki.archlinux.org/index.php/GNOME)
+
 ## Debugging
 ### Error unknown signature
 `$ pacman-key --refresh-keys`
