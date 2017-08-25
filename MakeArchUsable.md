@@ -15,6 +15,14 @@ NetworkManager is necessary to manage network in GUI. Install it with pacman `$ 
 ## Yaourt
 Follow [this tutorial](https://www.ostechnix.com/install-yaourt-arch-linux/)
 
+Add archlinuxfr source in `/etc/pacman.conf`:
+```
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/$arch
+```
+Install it with pacman: `$ pacman -Sy yaourt`.
+
 ## Graphical interface
 > **This section will apply to laptops with intel HD integrated graphics only.**
 
