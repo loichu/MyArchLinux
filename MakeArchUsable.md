@@ -2,6 +2,11 @@
 ## Make the shell great agin
 Install zsh, grml-zsh-config and terminus-font. `$ pacman -S zsh zsh-completions grml-zsh-config terminus-font`. Make it the default shell `$ chsh /usr/bin/zsh`. Find the good font `$ setfont ter-v28n` where `28` is the size. Once you found the perfect font size, make it persistent by writing `FONT=<your-font>` in `/etc/vconsole.conf`.
 
+`grml-zsh-config` will override `oh-my-zsh`. If you remove grml-zsh-config, your shell will be ugly in row tty.
+
+## Greate oh-my-zsh themes
+* steeef
+
 ## Create a user
 [Doc for groups and users](https://wiki.archlinux.org/index.php/Users_and_groups)
 
