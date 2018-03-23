@@ -8,6 +8,7 @@ Install zsh, grml-zsh-config and terminus-font. `$ pacman -S zsh zsh-completions
 * steeef
 * xiong-chiamiov
 * nanotech
+* wedisagree
 
 ## Create a user
 [Doc for groups and users](https://wiki.archlinux.org/index.php/Users_and_groups)
