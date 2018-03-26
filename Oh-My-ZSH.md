@@ -10,6 +10,7 @@
 * ys
 * alanpeabody
 * mortalscumbag
+* candy
 
 
 ## How to load a plugin
