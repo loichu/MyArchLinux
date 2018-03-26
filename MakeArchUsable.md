@@ -10,6 +10,7 @@ Install zsh, grml-zsh-config and terminus-font. `$ pacman -S zsh zsh-completions
 * nanotech
 * wedisagree
 * intheloop
+* candy-kingdom
 
 ## Create a user
 [Doc for groups and users](https://wiki.archlinux.org/index.php/Users_and_groups)
