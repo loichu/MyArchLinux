@@ -7,6 +7,7 @@
 * wedisagree
 * intheloop
 * candy-kingdom **[requires battery plugin]**
+* ys
 
 
 ## How to load a plugin
