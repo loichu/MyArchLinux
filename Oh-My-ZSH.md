@@ -8,6 +8,7 @@
 * intheloop
 * candy-kingdom **[requires battery plugin]**
 * ys
+* alanpeabody
 
 
 ## How to load a plugin
