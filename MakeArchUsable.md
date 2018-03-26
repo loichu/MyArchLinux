@@ -4,13 +4,7 @@ Install zsh, grml-zsh-config and terminus-font. `$ pacman -S zsh zsh-completions
 
 `grml-zsh-config` will override `oh-my-zsh`. If you remove grml-zsh-config, your shell will be ugly in row tty.
 
-## Greate oh-my-zsh themes
-* steeef
-* xiong-chiamiov
-* nanotech
-* wedisagree
-* intheloop
-* candy-kingdom
+So choose wisely between `oh-my-zsh` or `grml-zsh-config`.
 
 ## Create a user
 [Doc for groups and users](https://wiki.archlinux.org/index.php/Users_and_groups)
