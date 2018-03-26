@@ -9,6 +9,7 @@
 * candy-kingdom **[requires battery plugin]**
 * ys
 * alanpeabody
+* mortalscumbag
 
 
 ## How to load a plugin
