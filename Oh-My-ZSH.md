@@ -18,6 +18,7 @@
 * fox
 * duellj
 * gnzh
+* jtriley
 
 ## How to load a plugin
 You can either add the plugin in `~/.zshrc` then reload the shell by sourcing `~/.zshrc` or load it from the plugin directory. 
