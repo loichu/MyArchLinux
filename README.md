@@ -31,7 +31,7 @@ See [official documentation](https://wiki.archlinux.org/index.php/Partitioning)
 ### Partition Table
 I suggest to use fdisk to partition the disk. `$ gdisk /dev/sda` to go in interractive partitioning. Press `o` to create a new GPT partition table. 
 ### EFI System Partition
-See [official documentation]https://wiki.archlinux.org/index.php/EFI_System_Partition)
+See [official documentation](https://wiki.archlinux.org/index.php/EFI_System_Partition)
 
 Press `n` to create a new partition. Accept the defaults for the partition number and first sector. For the last sector enter `+512M`. When it asks to choose a partition type, enter `EF00` that means: EFI System Partition.
 ### LVM Partition
